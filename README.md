@@ -25,3 +25,6 @@ To stop temporarly (maybe just before some edit or fix):
     systemctl stop my-service.service
 
 Everytime we modify our service, we NEED reload the deamon.
+
+
+If you want to extend this basic service you can look https://www.shellhacks.com/systemd-service-file-example/ for more information.
