@@ -6,7 +6,7 @@ User=root
 Type=idle
 WorkingDirectory=/path/to/youtrack/bin/
 ExecStart=/bin/bash -c './youtrack.sh start'
-Restart=always
+RemainAfterExit=yes
 RestartSec=10
 
 [Install]
