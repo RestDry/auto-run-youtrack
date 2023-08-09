@@ -1,0 +1,13 @@
+[Unit]
+Description=Auto-start Youtrack
+
+[Service]
+User=root
+Type=idle
+WorkingDirectory=/path/to/youtrack/bin/
+ExecStart=/bin/bash -c './youtrack.sh start'
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
